@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  oneMore
+//
+//  Created by Weefeng Ma on 2017/11/17.
+//  Copyright © 2017年 maweefeng. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "NetWorkManager.h"
+#import "AFNetworking.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+
+#define appkey @"9a9dd4c89424e12ed08aa70ab3dc5742"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

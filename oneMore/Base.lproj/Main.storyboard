@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--一堆-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController title="一堆" id="9pv-A4-QxB" customClass="FirstViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="一堆" id="rvb-se-g9p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1420" y="-305"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crb-VF-NWQ">
+                                <rect key="frame" x="20" y="84" width="335" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.65098039220000004" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="iox-jt-uRC"/>
+                                </constraints>
+                                <state key="normal" title="微博">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="accessThirdApi:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="6se-AJ-1tT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbv-LG-bqG">
+                                <rect key="frame" x="20" y="204" width="335" height="44"/>
+                                <color key="backgroundColor" red="0.71450666243654815" green="0.44673490159030282" blue="0.49901853805828567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="JGO-X8-bC0"/>
+                                </constraints>
+                                <state key="normal" title="instagram">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="accessThirdApi:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="nfn-Ii-e3J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1na-Rj-wDR">
+                                <rect key="frame" x="20" y="144" width="335" height="44"/>
+                                <color key="backgroundColor" red="0.26263880997562367" green="0.73913388324873097" blue="0.16073437627498888" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="豆瓣">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="accessThirdApi:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="36K-6V-xMt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tbv-LG-bqG" firstAttribute="top" secondItem="1na-Rj-wDR" secondAttribute="bottom" constant="16" id="7ej-I6-SNf"/>
+                            <constraint firstItem="1na-Rj-wDR" firstAttribute="leading" secondItem="crb-VF-NWQ" secondAttribute="leading" id="7qC-mO-qrA"/>
+                            <constraint firstItem="crb-VF-NWQ" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="20" id="Ui9-HF-vze"/>
+                            <constraint firstItem="1na-Rj-wDR" firstAttribute="top" secondItem="crb-VF-NWQ" secondAttribute="bottom" constant="16" id="VBz-RO-xc7"/>
+                            <constraint firstItem="1na-Rj-wDR" firstAttribute="trailing" secondItem="crb-VF-NWQ" secondAttribute="trailing" id="a80-id-b9C"/>
+                            <constraint firstItem="Tbv-LG-bqG" firstAttribute="trailing" secondItem="crb-VF-NWQ" secondAttribute="trailing" id="i5j-2c-CW1"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="crb-VF-NWQ" secondAttribute="trailing" constant="20" id="mKV-bF-mvm"/>
+                            <constraint firstItem="Tbv-LG-bqG" firstAttribute="leading" secondItem="crb-VF-NWQ" secondAttribute="leading" id="qpq-MN-8JS"/>
+                            <constraint firstItem="1na-Rj-wDR" firstAttribute="height" secondItem="crb-VF-NWQ" secondAttribute="height" id="rUA-qF-FKa"/>
+                            <constraint firstItem="Tbv-LG-bqG" firstAttribute="height" secondItem="1na-Rj-wDR" secondAttribute="height" id="v5v-Ah-spD"/>
+                            <constraint firstItem="crb-VF-NWQ" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="20" id="ypE-Hr-VbD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="我的" id="kyH-NK-g2O"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1457" y="359"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="KUE-2d-x3A" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="byH-jT-wyW" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--新闻-->
+        <scene sceneID="9y0-t2-QQu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KUE-2d-x3A" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="新闻" image="first" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mfN-8V-4aI">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="vWj-89-eG8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eKm-Kk-uES" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748.79999999999995" y="-320.23988005997006"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="6RJ-iB-ioo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="byH-jT-wyW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的" image="second" id="cPa-gy-q4n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TwA-XP-NIu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="qCv-ay-8y8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cdd-qs-iwS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748.79999999999995" y="359.82008995502252"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
